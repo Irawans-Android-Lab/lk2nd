@@ -29,4 +29,18 @@
 			};
 		};
 	};
+
+	smartfren-rendang {
+		model = "Smartfren Andromax Q (rendang)";
+		compatible = "smartfren,rendang", "qcom,msm8916", "lk2nd,device";
+		lk2nd,match-panel;
+
+		panel {
+			compatible = "smartfren,rendang-panel";
+
+			qcom,mdss_dsi_ili9806e_fwvga_hsd_hlt_video {
+				compatible = "smartfren,ilitek-ili9806e";
+			};
+		};
+	};
 };
